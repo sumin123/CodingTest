@@ -7,6 +7,5 @@ assignees: ''
 
 ---
 
-## code
+## 문제
 
-## description
