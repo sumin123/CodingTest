@@ -1,3 +1,6 @@
+# 연결리스트 구현까지는 했는데 이동할 때 주의할 점을 놓쳤음.
+# 일주일 뒤에 다시 풀어보자
+
 def solution(n, k, cmd):
     answer = ['O']*n
     linked_list = {i: [i-1, i+1] for i in range(n)}
