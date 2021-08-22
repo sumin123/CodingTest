@@ -68,7 +68,6 @@ class Solution {
                     visited[nx][ny] = true;
                     map[nx][ny] = nPrice;
                     q.add(new Node(nx, ny, nDir, nPrice));
-                    // System.out.println(nPrice);
                 }
             }
         }
