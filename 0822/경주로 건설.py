@@ -1,4 +1,5 @@
 from collections import deque
+print('ddd')
 def solution(board):
     # 방문처리 전략 : Visited에 비용 저장 후 비용이 같거나 작은 경로가 찾아오면 갱신
     
@@ -30,5 +31,7 @@ def solution(board):
                     if not visited[nr][nc] or visited[nr][nc] >= nxt_sum: # 미방문 지점이거나 방문처리된 지점의 비용보다 같거나 작은 경우 비용 갱신
                         visited[nr][nc] = nxt_sum
                         q.append([nr, nc, i, nxt_sum])
-                    
+    print(answer)
     return min(answer)
+
+solution([[0,0,0],[0,0,0],[0,0,0]])
