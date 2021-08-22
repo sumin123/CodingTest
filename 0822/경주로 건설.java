@@ -87,3 +87,4 @@ class Node{
         this.dir = dir;
     }
 }
+>>>>>>> 3fb6e50a6a8e0fe7eb3490f6d730e83ef327c371
