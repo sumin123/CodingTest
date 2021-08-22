@@ -1,54 +1,34 @@
-from collections import deque 
+from collections import deque
 def solution(board):
+    # 방문처리 전략 : Visited에 비용 저장 후 비용이 같거나 작은 경로가 찾아오면 갱신
+    
     answer = []
     
     N = len(board)
-    dir = [[(-1,0), (1,0)], [(0, -1), (0,1)]] # Up, Down, Left, Right
-    costs = (100, 600) # Corner, Straight
-    visited = [[[False for _ in range(2)] for _ in range(N)] for _ in range(N)]
+    visited = [[False for _ in range(N)] for _ in range(N)]
+    dirs = [[(-1,0), (1,0)], [(0,1), (0,-1)]] # UP/DOWN & LEFT/RIGHT
     q = deque()
-    q.append([0,0,-1,0]) # row, column, direction(0=Vertical, 1=Horizontal), sum_cost
-    
+    visited[0][0] = True # 시작점 방문처리
+    q.append([0,0,-1,0]) # 행좌표, 열좌표, 방향, 비용
     
     while q:
-        cur_r, cur_c, direction, sum = q.popleft()
-        # 결승점 도착
+        cur_r, cur_c, dir, sum = q.popleft()
+        
+        # 도착
         if cur_r == N-1 and cur_c == N-1:
             answer.append(sum)
             continue
         
-        # 수직방향 이동 검사
-        for dr, dc in dir[0]:
-            nr, nc = cur_r+dr, cur_c+dc
-            if 0 <= nr < N and 0 <= nc < N:
-                if not visited[nr][nc][0] and board[nr][nc] == 0:
-                    visited[nr][nc][0] = True
-                    if direction == -1 or direction == 0: # 첫 이동이거나 수직이동 중이었던 경로의 경우
-                        q.append([nr,nc,0,sum+costs[0]])
-                    else:
-                        q.append([nr,nc,0,sum+costs[1]]) # 꺾이는 지점
-        
-        # 수평방향 이동 검사
-        for dr, dc in dir[1]:
-            nr, nc = cur_r+dr, cur_c+dc
-            if 0 <= nr < N and 0 <= nc < N:
-                if not visited[nr][nc][1] and board[nr][nc] == 0:
-                    visited[nr][nc][1] = True
-                    if direction == -1 or direction == 1: # 첫 이동이거나 수평이동 중이었던 경로의 경우
-                        q.append([nr,nc,1,sum+costs[0]])
-                    else:
-                        q.append([nr,nc,1,sum+costs[1]]) # 꺾이는 지점
-        
-                        
-        
-        # for i in range(4):
-        #     dr, dc, cost = dir[i][0], dir[i][1], costs[i]
-        #     nr, nc = cur_r+dr, cur_c+dc
-        #     if 0 <= nr < N and 0 <= nc < N:
-        #         if not visited[nr][nc][i] and board[nr][nc] == 0:
-        #             visited[nr][nc][i] = True
-        #             q.append([nr,nc,total+cost])
-        # print(q)
-    print(visited)
-    
+        for i in range(2):
+            for dr, dc in dirs[i]:
+                nr, nc = cur_r + dr, cur_c + dc
+                if 0 <= nr < N and 0 <= nc < N and board[nr][nc] == 0:
+                    if dir == -1 or dir == i: # 첫 이동 또는 같은 방향 이동 시
+                        nxt_sum = sum+100
+                    elif dir != i: # 코너링 시
+                        nxt_sum = sum+600 
+                    if not visited[nr][nc] or visited[nr][nc] >= nxt_sum: # 미방문 지점이거나 방문처리된 지점의 비용보다 같거나 작은 경우 비용 갱신
+                        visited[nr][nc] = nxt_sum
+                        q.append([nr, nc, i, nxt_sum])
+                    
     return min(answer)
