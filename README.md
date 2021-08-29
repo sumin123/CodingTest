@@ -13,3 +13,4 @@
 + 2021/08/27: [블록 이동하기](https://programmers.co.kr/learn/courses/30/lessons/60063)
 + 2021/08/28: [셔틀 버스](https://programmers.co.kr/learn/courses/30/lessons/17678)
 + 2021/08/29: [징검다리 건너기](https://programmers.co.kr/learn/courses/30/lessons/64062)
++ 2021/08/30: [외벽 점검](https://programmers.co.kr/learn/courses/30/lessons/60062)
