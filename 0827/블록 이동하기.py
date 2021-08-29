@@ -120,9 +120,6 @@ def solution(board):
         
         # 방문 처리
         if visited[p1][p2]:
-            # if visited[p1][p2] < cur_t:
-            #     continue
-            # visited[p1][p2] = cur_t
             continue
             
         result = rotate(p1,p2,cur_t)
@@ -138,9 +135,6 @@ def solution(board):
         visited[p1][p2] = True
         visited[p2][p1] = True
         
-        # print(q)
-    
-    # print(new_board)
 
     
     return answer
