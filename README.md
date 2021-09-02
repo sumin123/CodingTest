@@ -17,3 +17,4 @@
 + 2021/08/31: [모두 0으로 만들기](https://programmers.co.kr/learn/courses/30/lessons/76503), [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411)
 + 2021/09/01: [퍼즐 조각 채우기](https://programmers.co.kr/learn/courses/30/lessons/84021)
 + 2021/09/02: [무지의 먹방 라이브](https://programmers.co.kr/learn/courses/30/lessons/42891)
++ 2021/09/03: [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059)
