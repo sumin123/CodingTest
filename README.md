@@ -19,3 +19,4 @@
 + 2021/09/02: [무지의 먹방 라이브](https://programmers.co.kr/learn/courses/30/lessons/42891)
 + 2021/09/03: [자물쇠와 열쇠](https://programmers.co.kr/learn/courses/30/lessons/60059)
 + 2021/09/04: [합승 택시 요금](https://programmers.co.kr/learn/courses/30/lessons/72413)
++ 2021/09/05: [광고 삽입](https://programmers.co.kr/learn/courses/30/lessons/72414)
