@@ -46,17 +46,6 @@ def rotate(arr):
             
     return r_arr
     
-def move(arr, dr, dc):
-    N = len(arr)
-    m_arr = [[0 for _ in range(N)] for _ in range(N)]
-    
-    for r in range(N):
-        for c in range(N):
-            nr, nc = r+dr, c+dc
-            if 0 <= nr < N and 0 <= nc < N:
-                m_arr[r+dr][c+dc] = arr[r][c]
-    
-    return m_arr
 
 def search(target, lock):
     N = len(lock)
