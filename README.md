@@ -22,3 +22,4 @@
 + 2021/09/05: [광고 삽입](https://programmers.co.kr/learn/courses/30/lessons/72414)
 + 2021/09/06: [보석 쇼핑](https://programmers.co.kr/learn/courses/30/lessons/67258)
 + 2021/09/07: [동굴 탐험](https://programmers.co.kr/learn/courses/30/lessons/67260)
++ 2021/09/08: [기둥과 보 설치](https://programmers.co.kr/learn/courses/30/lessons/60061)
