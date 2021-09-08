@@ -23,3 +23,4 @@
 + 2021/09/06: [보석 쇼핑](https://programmers.co.kr/learn/courses/30/lessons/67258)
 + 2021/09/07: [동굴 탐험](https://programmers.co.kr/learn/courses/30/lessons/67260)
 + 2021/09/08: [기둥과 보 설치](https://programmers.co.kr/learn/courses/30/lessons/60061)
++ 2021/09/09: [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
