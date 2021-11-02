@@ -27,3 +27,4 @@
 - 2021/09/09: [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
 - 2021/09/10: [거스름돈](https://programmers.co.kr/learn/courses/30/lessons/12907)
 - 2021/10/03: [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060), [블록 게임](https://programmers.co.kr/learn/courses/30/lessons/42894)
+- 2021/10/03: [전력망을 둘로 나누기](https://programmers.co.kr/learn/courses/30/lessons/86971)
