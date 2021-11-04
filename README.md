@@ -28,4 +28,5 @@
 - 2021/09/10: [거스름돈](https://programmers.co.kr/learn/courses/30/lessons/12907)
 - 2021/10/03: [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060), [블록 게임](https://programmers.co.kr/learn/courses/30/lessons/42894)
 - 2021/11/02: [전력망을 둘로 나누기](https://programmers.co.kr/learn/courses/30/lessons/86971)
-- 2021/11/02: [최소 직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
+- 2021/11/03: [최소 직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
+- 2021/11/04: [모음 사전](https://programmers.co.kr/learn/courses/30/lessons/84512#)
