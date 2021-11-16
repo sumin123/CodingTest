@@ -31,3 +31,4 @@
 - 2021/11/03: [최소 직사각형](https://programmers.co.kr/learn/courses/30/lessons/86491)
 - 2021/11/04: [모음 사전](https://programmers.co.kr/learn/courses/30/lessons/84512#)
 - 2021/11/11: [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301)
+- 2021/11/16: [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586#)
